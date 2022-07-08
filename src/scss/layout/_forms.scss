@@ -1,0 +1,26 @@
+@use '../global' as g;
+
+.container{
+    input{
+        border: 1px g.$input-border solid ;
+        background-color: g.$light-white;
+        border-radius: 5px;
+        padding: .5rem 2rem;
+        text-align: center;
+        color: white;
+        font-size: 15px;
+    } 
+    
+    input:focus{outline:none}
+
+    button{
+        border: none;
+        border-radius: 10px;
+        padding: .75rem 1.5rem ;
+        background-color: g.$brown;
+        color: white;
+        font-weight: 500;
+        cursor: pointer;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,24 @@
+@use '../global' as g;
+
+h1{
+    text-align: center;
+    padding-bottom: .5rem;
+    border-bottom: 1px white solid;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.container{
+
+    h2 {
+        text-align: center;
+    }
+
+    &__output{
+        h3{
+            border-bottom: 1px g.$border-bottom solid;
+            font-size: 1rem;
+            margin-right: 1rem;
+        }
+    }
+}

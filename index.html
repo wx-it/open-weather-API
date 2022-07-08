@@ -4,17 +4,68 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/style.css" />
     <title>Weather | Open Weather API</title>
   </head>
   <body>
-    <input type="text" value="search location" id="search" />
-    <button id="sLocation">search</button>
-    <h2 id="country"></h2>
-    <p>Name <span id="id"></span></p>
-    <p>Temp <span id="temp"></span></p>
-    <p>feels like<span id="feels_like"></span></p>
-    <p>humidity<span id="humidity"></span></p>
-    <p>pressure<span id="pressure"></span></p>
-    <script src="js/script.js"></script>
+    <div class="container">
+      <h1>Open Weather APP</h1>
+      <div class="container__search">
+        <input type="text" value="Search Location" id="search" />
+        <button id="sLocation">search</button>
+      </div>
+      <div class="container__content">
+        <div class="container__title">
+          <h2 id="country"></h2>
+          <img id="img" src="" alt="" />
+        </div>
+        <div class="container__row">
+          <div class="container__column">
+            <div class="container__output">
+              <h3>Weather :</h3>
+              <p id="main"></p>
+            </div>
+
+            <div class="container__output">
+              <h3>Description :</h3>
+              <p id="description"></p>
+            </div>
+
+            <div class="container__output">
+              <h3>Temperature :</h3>
+              <p id="temp"></p>
+            </div>
+            <div class="container__output">
+              <h3>Min Temperature :</h3>
+              <p id="temp-min"></p>
+            </div>
+            <div class="container__output">
+              <h3>Max Temperature :</h3>
+              <p id="temp-max"></p>
+            </div>
+          </div>
+          <div class="container__column">
+            <div class="container__output">
+              <h3>Feels Like :</h3>
+              <p id="feels_like"></p>
+            </div>
+            <div class="container__output">
+              <h3>Humidity :</h3>
+              <p id="humidity"></p>
+              <span>%</span>
+            </div>
+            <div class="container__output">
+              <h3>Pressure :</h3>
+              <p id="pressure"></p>
+            </div>
+            <div class="container__output">
+              <h3>Wind Speed :</h3>
+              <p id="wind"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/js/script.js"></script>
   </body>
 </html>

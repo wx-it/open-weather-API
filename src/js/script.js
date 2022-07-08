@@ -37,7 +37,7 @@ async function fetchData(){
       tempMin.textContent = tempMinCelsius;
       tempMax.textContent = tempMaxCelsius;
       feelsLike.textContent = feelsLikeCelsius;
-      humidity.textContent = data.main.humidity;
+      humidity.textContent = data.main.humidity + "%";
       pressure.textContent = data.main.pressure;
       main.textContent = findWeather.main;
       description.textContent = findWeather.description;

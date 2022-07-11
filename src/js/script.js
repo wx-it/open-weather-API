@@ -10,8 +10,8 @@ const main = document.getElementById('main');
 const description = document.getElementById('description');
 const img = document.getElementById('img');
 const wind = document.getElementById('wind');
+const visibility = document.getElementById('visibility');
 
-let apiKey = "1bb962f988c5bb5cb191cfcf5ccf794f";
 const weatherAPI = `https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=${apiKey}`;
 
 
@@ -29,8 +29,10 @@ async function fetchData(){
   let tempMinCelsius = Math.round(parseFloat(data.main.temp_min)-273.15) + '°';
   let tempMaxCelsius = Math.round(parseFloat(data.main.temp_max)-273.15) + '°';
   let feelsLikeCelsius = Math.round((parseFloat(data.main.feels_like))-273.15) + '°';
+  let toKm = data.visibility / 1000 + 'km';
   //DOM
     {
+      visibility.textContent = toKm;
       search = data.name;
       country.textContent = data.name;
       temp.textContent = celsius;
@@ -38,7 +40,7 @@ async function fetchData(){
       tempMax.textContent = tempMaxCelsius;
       feelsLike.textContent = feelsLikeCelsius;
       humidity.textContent = data.main.humidity + "%";
-      pressure.textContent = data.main.pressure;
+      pressure.textContent = data.main.pressure + "hPa";
       main.textContent = findWeather.main;
       description.textContent = findWeather.description;
       wind.textContent = windConvert;

@@ -9,7 +9,7 @@ h1{
     @include u.breakpoints(desktop) {
         position: absolute;
         top: 2rem;
-        left: 2rem;
+        left: 1rem;
         padding-right: 5rem;
     }
 }

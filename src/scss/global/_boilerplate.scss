@@ -1,4 +1,4 @@
-@use '../util' as u;
+@use '../utils' as u;
 
 html{
     box-sizing: border-box;
@@ -12,6 +12,7 @@ html{
 }
 
 body{
+    color: white;
     font-family: u.$font;
     background-image: url('/src/image/background.jpg');
     background-repeat: no-repeat;

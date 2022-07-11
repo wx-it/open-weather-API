@@ -1,11 +1,17 @@
 @use '../global' as g;
-
+@use '../utils' as u;
 h1{
     text-align: center;
     padding-bottom: .5rem;
     border-bottom: 1px white solid;
     font-weight: 400;
     font-size: 24px;
+    @include u.breakpoints(desktop) {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        padding-right: 5rem;
+    }
 }
 
 .container{

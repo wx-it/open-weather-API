@@ -1,4 +1,5 @@
 @use '../global' as g;
+@use '../utils' as u;
 
 .container{
     display: flex;
@@ -8,7 +9,8 @@
     height: 100vh;
 
     &__content{
-        border: 1px g.$light-white solid;
+        box-shadow: 0px 5px 30px rgba($color: #000000, $alpha: 0.2);
+        backdrop-filter: blur(5px);
         background-color: g.$glass;
         padding: 2rem 5rem;
         border-radius: 20px;
@@ -25,7 +27,19 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        margin: 2rem;
+        margin:  2rem 0;
+
+        @include u.breakpoints(desktop) {
+            flex-direction: row;
+            margin: 2rem;
+        }
+        
+    }
+
+    &__column{
+        @include u.breakpoints(desktop) {
+            margin-right: 2rem;
+        }
     }
 
     &__output{

@@ -1,6 +1,6 @@
 # open weather API
 
-View (live)[https://open-weather-api-five.vercel.app]
+View [live](https://open-weather-api-five.vercel.app)
 
 Weather app that uses the openWeatherAPI to get data and displays weather information based on the country searched on the input.
 

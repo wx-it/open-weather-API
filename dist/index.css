@@ -1,10 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;800&display=swap");/*# sourceMappingURL=index.css.map */
 
 html{
-  box-sizing: border-box;
-  font-size: 100%;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;800&display=swap");/*# sourceMappingURL=index.css.map */ont-size: 100%;
 }
-
 
 *, *::after, *::before {
   box-sizing: inherit;
@@ -126,7 +123,6 @@ h1 {
 }
 
 footer {
-  border: 1px black solid;
   text-align: center;
   word-spacing: 0.25rem;
   font-size: 12px;
